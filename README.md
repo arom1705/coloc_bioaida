@@ -23,4 +23,4 @@ Quick guide to image preprocessing and pixel intensity data acquisition in Fiji/
   
 # Examples
 
-Example pixel intensity data sets (.csv) of objects with higher and lower colocalization are provided, as well as the image the values were saved from. 
+Example pixel intensity data sets of objects with higher (green high coloc dec.csv, red high coloc dec.csv) and lower (green low coloc dec.csv, red low coloc dec.csv) colocalization are provided, as well as the images the values were saved from. 
