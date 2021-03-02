@@ -21,3 +21,6 @@ Quick guide to image preprocessing and pixel intensity data acquisition in Fiji/
   Q2: What are the advantages of your method?
   A2: In my script Otsu thresholding algorithm is separately applied to each channel and then only double-negative pixels are subtracted from the downstream analysis. This approach preserves the influence of non-colocalised pixel on the resultant correlation coefficient, thus decreasing the possibility of getting false-positive results. The code also tests the distributions of pixel intensity data for normality and chooses the appropriate method of correlation analysis - parametric or non-parametric. The normality test is never performed in Coloc2, despite it is one of the most basic preliminary statistical tests. Thereby users can only count on the scatterplots in the output of Coloc2 to check whether the relationship between channels is linear when choosing between parametric and non-parametric tests for correlation analysis. The coefficients from multiple colocalization tests are aggregated into a dataframe that is easy to be subjected to further statistical tests.
   
+# Examples
+
+Example pixel intensity data sets (.csv) of objects with higher and lower colocalization are provided, as well as the image the values were saved from. 
