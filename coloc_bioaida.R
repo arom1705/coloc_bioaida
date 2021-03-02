@@ -2,7 +2,6 @@ library(magrittr) # %>%
 library(data.table)
 library(autothresholdr)
 library(ggplot2)
-library(hexbin)
 
 #making vectors for aggregation of correlation coeffitients
 control <- c()
@@ -26,6 +25,13 @@ merged[,c(4,5)] <- NULL
 
 #subtracting double-negative (background) pixels
 mergedth <- merged[!(green<=thgreen & red<=thred)]
+
+#visualizing
+ggplot(mergedth, aes(red, green))+
+  theme_bw()+
+  geom_bin2d(bins = 40) +
+  scale_fill_continuous(type = "viridis") +
+  geom_smooth(color="red")
 
 #testing the normality of data
 ntg <- ks.test(mergedth$green, "pnorm", mean=mean(mergedth$green), sd=sd(mergedth$green))
