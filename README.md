@@ -1,5 +1,5 @@
 # coloc_bioaida
-Easy-to-use and end-to-end way to perform colocalization analysis - the assessment of correlation between two codistributed molecules labeled by different fluorophores (i.e. detected in two different channels in fluorescence microscopy).
+Easy-to-use and end-to-end way to perform colocalization analysis - the assessment of correlation between two codistributed molecules labeled by different fluorophores.
 
 # Image preprocessing in Fiji/ImageJ2 
 
